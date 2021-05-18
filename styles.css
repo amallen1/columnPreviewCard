@@ -22,8 +22,8 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
   -ms-grid-rows: (420px)[3];
       grid-template-rows: repeat(3, 420px);
       grid-template-areas: "card-1" "card-2" "card-3";
@@ -68,7 +68,7 @@ body {
 }
 
 .card-heading {
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   color: white;
   font-size: 2.5em;
   text-transform: uppercase;
@@ -77,7 +77,7 @@ body {
 
 .card-description {
   color: rgba(255, 255, 255, 0.75);
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
   font-weight: 300;
   font-size: 15px;
   margin-bottom: 20px;
@@ -89,8 +89,37 @@ body {
   height: 50px;
   border-radius: 30px;
   border: none;
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
   font-weight: bold;
   margin-bottom: 40px;
+}
+
+@media (min-width: 1000px) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (350px)[3];
+        grid-template-columns: repeat(3, 350px);
+    -ms-grid-rows: 600px;
+        grid-template-rows: 600px;
+        grid-template-areas: "card-1" "card-2" "card-3";
+  }
+  #card-1 {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    background-color: #e38826;
+  }
+  #card-3 {
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 7px;
+  }
+  .card-heading {
+    font-size: 3em;
+  }
+  .learn-btn {
+    margin-top: 175px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
