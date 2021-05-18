@@ -24,8 +24,8 @@ body {
   display: grid;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  -ms-grid-rows: (300px)[3];
-      grid-template-rows: repeat(3, 300px);
+  -ms-grid-rows: (420px)[3];
+      grid-template-rows: repeat(3, 420px);
       grid-template-areas: "card-1" "card-2" "card-3";
   margin: 0px 1.5em;
   padding: 2em 0;
@@ -41,17 +41,56 @@ body {
   background-color: #e38826;
 }
 
-.card-img {
-  padding: 40px 0px 30px 0px;
+#card-1 .learn-btn {
+  color: #e38826;
 }
 
 #card-2 {
   background-color: #006970;
 }
 
+#card-2 .learn-btn {
+  color: #006970;
+}
+
 #card-3 {
   background-color: #004241;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+
+#card-3 .learn-btn {
+  color: #004241;
+}
+
+.card-img {
+  padding: 40px 0px 30px 0px;
+}
+
+.card-heading {
+  font-family: 'Big Shoulders Display', cursive;
+  color: white;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.card-description {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 1.7em;
+}
+
+.learn-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
