@@ -17,8 +17,8 @@ body {
   grid-template-columns: 300px;
   grid-template-rows: repeat(3, 420px);
   grid-template-areas: "card-1" "card-2" "card-3";
-  margin: 0px 1.5em;
-  padding: 2em 0;
+  margin: 0em 1.5em;
+  padding: 2em 0em;
 }
 
 .grid-item {
@@ -86,7 +86,7 @@ body {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 350px);
-    grid-template-rows: 600px;
+    grid-template-rows: 500px;
     grid-template-areas: "card-1" "card-2" "card-3";
   }
 
@@ -104,11 +104,10 @@ body {
   }
 
   .card-heading {
-      font-size: 3em;
+    font-size: 3em;
   }
 
-
   .learn-btn {
-    margin-top: 175px;
+    margin-top: 100px;
   }
 }
