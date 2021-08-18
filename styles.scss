@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+//variables
+
+//Primary colors
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+//Neutral colors
+$transparent-white: hsla(0, 0%, 100%, 0.75); //paragraphs
+$very-light-gray: hsl(0, 0%, 95%); //background, headings, buttons)
+
 * {
   margin: 0;
   padding: 0;
@@ -5,109 +17,120 @@
 }
 
 body {
-  width: 100%;
+  font-size: 15px;
+  background-color: $very-light-gray;
+}
+
+.container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 85%;
+  margin: 3em auto;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: repeat(3, 420px);
-  grid-template-areas: "card-1" "card-2" "card-3";
-  margin: 0em 1.5em;
-  padding: 2em 0em;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid-item {
-  padding: 0px 50px;
+  padding: 0 2.75em;
+  max-width: 450px;
+
+  .card-img {
+    padding: 2.5em 0;
+  }
+
+  .card-heading {
+    font-family: "Big Shoulders Display", cursive;
+    color: $very-light-gray;
+    font-size: 2.75em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .card-description {
+    color: $transparent-white;
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 1.5em;
+    line-height: 1.7em;
+  }
+
+  .learn-btn {
+    padding: 1.125em 2.5em;
+    border-radius: 30px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    margin-bottom: 3em;
+    font-size: 1em;
+    background-color: $very-light-gray;
+  }
 }
 
 #card-1 {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  background-color: hsl(31, 77%, 52%);
+  background-color: $bright-orange;
 
   .learn-btn {
-    color: hsl(31, 77%, 52%);
+    color: $bright-orange;
   }
 }
 
 #card-2 {
-  background-color: hsl(184, 100%, 22%);
+  background-color: $dark-cyan;
+
   .learn-btn {
-    color: hsl(184, 100%, 22%);
+    color: $dark-cyan;
   }
 }
 
 #card-3 {
-  background-color: hsl(179, 100%, 13%);
+  background-color: $very-dark-cyan;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+
   .learn-btn {
-    color: hsl(179, 100%, 13%);
+    color: $very-dark-cyan;
   }
 }
 
-.card-img {
-  padding: 40px 0px 30px 0px;
-}
-
-.card-heading {
-  font-family: "Big Shoulders Display", cursive;
-  color: white;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  margin-bottom: 25px;
-}
-
-.card-description {
-  color: hsla(0, 0%, 100%, 0.75);
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  margin-bottom: 20px;
-  line-height: 1.7em;
-}
-
-.learn-btn {
-  width: 150px;
-  height: 50px;
-  border-radius: 30px;
-  border: none;
-  font-family: "Lexend", sans-serif;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
+  .container {
+    height: 100vh;
+    margin: 0 auto;
+  }
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 500px;
-    grid-template-areas: "card-1" "card-2" "card-3";
+
+    .grid-item {
+      position: relative;
+      max-width: 350px;
+    }
+
+    .card-heading {
+      font-size: 3em;
+    }
+
+    .learn-btn {
+      margin-top: 1em;
+      position: absolute;
+      bottom: 1em;
+    }
   }
 
   #card-1 {
-    border-top-left-radius: 7px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 7px;
-    background-color: hsl(31, 77%, 52%);
   }
 
   #card-3 {
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 7px;
-  }
-
-  .card-heading {
-    font-size: 3em;
-  }
-
-  .learn-btn {
-    margin-top: 100px;
   }
 }
