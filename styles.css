@@ -67,6 +67,7 @@ body {
   margin-bottom: 3em;
   font-size: 1em;
   background-color: #f2f2f2;
+  cursor: pointer;
 }
 
 #card-1 {
@@ -113,6 +114,13 @@ body {
   .grid .grid-item {
     position: relative;
     max-width: 350px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .grid .grid-item:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    z-index: 1;
   }
   .grid .card-heading {
     font-size: 3em;
