@@ -16,13 +16,20 @@ $very-light-gray: hsl(0, 0%, 95%); //background, headings, buttons)
   box-sizing: border-box;
 }
 
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: $bright-orange;
+}
+
 body {
+  height: 100vh;
   font-size: 15px;
   background-color: $very-light-gray;
 }
 
 .container {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +40,6 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid-item {
@@ -49,7 +55,7 @@ body {
     color: $very-light-gray;
     font-size: 2.75em;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 0.75em;
   }
 
   .card-description {
@@ -101,11 +107,11 @@ body {
 
 @media (min-width: 800px) {
   .container {
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
   }
+
   .grid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 500px;
 
@@ -125,7 +131,6 @@ body {
     }
 
     .learn-btn {
-      margin-top: 1em;
       position: absolute;
       bottom: 1em;
     }
@@ -140,4 +145,8 @@ body {
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0px;
   }
+}
+
+footer {
+  text-align: center;
 }

@@ -30,6 +30,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
+| Mobile (375px)                     | Desktop (1440px)                     |
+| ---------------------------------- | ------------------------------------ |
+| ![Mobile](./screenshots/screenshot-mobile.png) | ![Desktop](./screenshots/screenshot-desktop.png) |
+
 ### Links
 
 - Solution URL: [(https://github.com/amallen1/columnPreviewCard)]
@@ -47,18 +51,14 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This was a project I attempted when I first began my web development journey. The first attempt I ended up quitting momentarily because I didn't understand basic concepts like responsive design, positioning, units, and etc. I went back and studied these concepts and applied it to this project so it would be fully functioning and closely resemble the original design. I've learned a ton of HTML and CSS since my first attempt at this and I'm very proud at how the final result came out.
 
 ### Continued development
 
-I want to eventually add an animation that appears when you hover over any one of the cards.
+I added a transition that enlarges the cards when you hover over any one of them.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-
 ## Author
 
-- Frontend Mentor - [(https://www.frontendmentor.io/profile/amallen1)]
+- Frontend Mentor - [@amallen1](https://www.frontendmentor.io/profile/amallen1)
