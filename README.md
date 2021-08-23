@@ -30,9 +30,9 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-| Mobile (375px)                     | Desktop (1440px)                     |
-| ---------------------------------- | ------------------------------------ |
-| ![Mobile](./screenshots/screenshot-mobile.png) | ![Desktop](./screenshots/screenshot-desktop.png) |
+| Mobile (375px)                                 | Desktop (1440px)                                 |
+| ---------------------------------------------- | ------------------------------------------------ |
+| ![Mobile](./screenshots/mobile_screenshot.png) | ![Desktop](./screenshots/desktop_screenshot.png) |
 
 ### Links
 
@@ -58,6 +58,8 @@ This was a project I attempted when I first began my web development journey. Th
 I added a transition that enlarges the cards when you hover over any one of them.
 
 ### Useful resources
+
+- [Scrimba](https://scrimba.com/)
 
 ## Author
 
