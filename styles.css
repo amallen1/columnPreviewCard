@@ -74,33 +74,42 @@ body {
   font-size: 1em;
   background-color: #f2f2f2;
   cursor: pointer;
+  border: 1px solid #fff;
 }
 
-#card-1 {
+.grid-item .learn-btn:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.sedan {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   background-color: #e38826;
 }
 
-#card-1 .learn-btn {
+.sedan button {
   color: #e38826;
 }
 
-#card-2 {
+.suv {
   background-color: #006970;
 }
 
-#card-2 .learn-btn {
+.suv button {
   color: #006970;
 }
 
-#card-3 {
+.luxury {
   background-color: #004241;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
 
-#card-3 .learn-btn {
+.luxury button {
   color: #004241;
 }
 
@@ -133,11 +142,11 @@ body {
     position: absolute;
     bottom: 1em;
   }
-  #card-1 {
+  .sedan {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 7px;
   }
-  #card-3 {
+  .luxury {
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0px;
   }

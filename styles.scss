@@ -74,33 +74,41 @@ body {
     font-size: 1em;
     background-color: $very-light-gray;
     cursor: pointer;
+    border: 1px solid #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid hsl(0, 0%, 95%);
+      transition: 0.2s ease-in;
+    }
   }
 }
 
-#card-1 {
+.sedan {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   background-color: $bright-orange;
 
-  .learn-btn {
+  button {
     color: $bright-orange;
   }
 }
 
-#card-2 {
+.suv {
   background-color: $dark-cyan;
 
-  .learn-btn {
+  button {
     color: $dark-cyan;
   }
 }
 
-#card-3 {
+.luxury {
   background-color: $very-dark-cyan;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 
-  .learn-btn {
+  button {
     color: $very-dark-cyan;
   }
 }
@@ -136,12 +144,12 @@ body {
     }
   }
 
-  #card-1 {
+  .sedan {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 7px;
   }
 
-  #card-3 {
+  .luxury {
     border-top-right-radius: 7px;
     border-bottom-left-radius: 0px;
   }
